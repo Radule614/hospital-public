@@ -1,4 +1,4 @@
-<h3>Hospital public app</h3>
+## Hospital public app
 
 <p>Built with Angular 14</p>
 
