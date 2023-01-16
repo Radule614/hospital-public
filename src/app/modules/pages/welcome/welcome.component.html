@@ -1,24 +1,25 @@
-<nav class="navbar navbar-light bg-light static-top">
-    <div class="container">
-        <a class="navbar-brand" href="#!">Medical Clinic</a>
-        <a class="btn btn-primary" href="register">Sign Up</a>
-    </div>
-</nav>
-
-<mat-toolbar>
-    <span>
-        <a color="primary" mat-raised-button href="integration">integration page</a>
-        <a color="primary" mat-raised-button href="home">Home page</a>
-        <a color="primary" mat-raised-button href="login">Sign in</a>
-    </span>
-</mat-toolbar>
-
+<div class="main-container">
+    <mat-toolbar color="primary" class="header">
+      <mat-toolbar-row>
+        <span>Medical Clinic</span>
+        <span class="example-spacer"></span>
+        <a href="integration">
+          <button mat-raised-button>  Integration Page </button>
+        </a>
+        <a href="login">
+            <button mat-raised-button>  Login </button>
+        </a>
+        <a href="register">
+            <button mat-raised-button>  Sign up </button>
+        </a>
+      </mat-toolbar-row>
+    </mat-toolbar>
 <header class="masthead">
     <div class="container position-relative">
         <div class="row justify-content-center">
             <div class="col-xl-6">
                 <div class="text-center text-white">
-                    <h1 class="mb-5">Welcome to the medical clinic!</h1>
+                    <h1 class="mb-5">Welcome!</h1>
                 </div>
             </div>
         </div>
@@ -27,24 +28,24 @@
 
 <div class="panel panel-primary" style="padding-top: 30px; padding-left: 20px;">
     <div class="panel-heading">
-        <h1> Feedback List </h1>
+        <h1> Feedbacks </h1>
     </div>
     <div class="panel-body">
         <div class="table-responsive">
             <table class="table">
                 <thead>
                     <tr>
-                        <th>Feedback ID</th>
                         <th>Text</th>
+                        <th>Patient</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr *ngFor="let feedback of feedbacks">
                         <td>
-                            {{feedback.id}}
+                            {{feedback.textt}}
                         </td>
                         <td>
-                            {{feedback.textt}}
+                            {{feedback.user}}
                         </td>
                     </tr>
                 </tbody>
@@ -52,6 +53,8 @@
         </div>
     </div>
 </div>
+</div>
+
 
 
 

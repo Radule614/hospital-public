@@ -1,0 +1,39 @@
+.feedback-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .form-field{
+    width: 100%;
+    margin-bottom: 6px;
+  }
+
+  .form {
+    height: 290px;
+    padding: 20px;
+    width: 540px;
+  }
+
+  .submit-button{
+    background-color: blueviolet;
+    float: right;
+  }
+
+  .button-position {
+    float: right;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: right;
+    margin-top: 20px;
+    margin-bottom: 100px;
+  }
+  .button-group > button:not(:first-child) {
+    margin-left: 15px;
+  }
